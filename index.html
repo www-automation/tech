@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGyver Engineering Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        /* General Styles (unchanged from previous example) */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            background-color: #2a623d;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.75rem 1.25rem;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .intro {
+            background-color: #fff;
+            padding: 3rem 1rem;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 1rem auto; /* Center the section */
+            width: 80%; /* Match container width */
+            border-radius: 8px;
+        }
+        .intro h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .intro p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 1rem;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .about {
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .contact-info {
+            padding: 1rem 0;
+            text-align: center;
+        }
+        /* Projects Styles */
+        .projects-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+        .project-item {
+            width: 30%; /* Adjust for desired number of columns */
+            margin: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .project-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .project-item p {
+            padding: 0.5rem;
+            text-align: center;
+        }
+        footer {
+            background-color: #2a623d;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        a {
+            color: #2a623d;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #1e402a;
+        }
+
+        /* Media Query for Mobile Devices (max-width: 768px) */
+        @media (max-width: 768px) {
+            header {
+                padding: 1.5rem 0;
+            }
+            header h1 {
+                font-size: 1.75rem;
+            }
+            nav {
+                padding: 0.25rem 0;
+            }
+            nav a {
+                display: block;
+                padding: 0.5rem;
+                text-align: center;
+            }
+            .intro {
+                width: 95%; /* Full width on mobile */
+                padding: 2rem 0.5rem;
+            }
+            .intro h2 {
+                font-size: 1.8rem;
+            }
+            .intro p {
+                font-size: 1rem;
+            }
+            .container {
+                width: 95%;
+                padding: 1.5rem 0.5rem;
+            }
+            .about h2, .contact-info h2 {
+                font-size: 1.5rem;
+            }
+            .about p, .contact-info p {
+                font-size: 1rem;
+            }
+            /* Mobile adjustments for projects gallery */
+            .project-item {
+                width: 90%; /* Full width on mobile */
+                margin: 0.5rem auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TechGyver Engineering Services</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="intro">
+        <h2>Ready to Engineer the Future?</h2>
+        <p>I'm James Erwin Damit, a passionate system engineer specializing in hardware programming, IoT solutions, and embedded systems. I thrive on challenges and am dedicated to crafting innovative, efficient, and scalable solutions that drive technological advancement. Explore my projects below and let's connect to build the next generation of smart devices!</p>
+    </section>
+    <section id="about" class="container about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm James Erwin Damit, and I'm passionate about system engineering.
+            I live in beautiful Bukidnon, Philippines, and I enjoy Embedded Systems, Arduino Programming, and IoT Solutions.
+        </p>
+    </section>
+    <section id="projects" class="container">
+        <h2>My Projects</h2>
+        <div class="projects-gallery">
+            <div class="project-item">
+                <img src="project1.jpg" alt="Project 1">
+                <p>POLLD WLS for Flood Monitoring</p>
+            </div>
+            <div class="project-item">
+                <img src="project2.jpg" alt="Project 2">
+                <p>Onsite installation and programming of WLS</p>
+            </div>
+            <div class="project-item">
+                <img src="project3.jpg" alt="Project 3">
+                <p>LoRa Based Systems</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="container contact-info">
+        <h2>Contact Information</h2>
+        <p>
+            Email: <a href="mailto:jedabchannel@gmail.com">jedabchannel@gmail.com</a><br>
+            Phone: +639948980624
+        </p>
+    </section>
+    <footer>
+        <p>&copy; 2025 James Erwin Damit. All rights reserved.</p>
+    </footer>
+</body>
+</html>
