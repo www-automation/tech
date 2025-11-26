@@ -31,10 +31,13 @@
         }
 
         body {
-            font-family: 'Courier', sans-serif;
+            font-family: 'verdana', verdana;
             margin: 0;
             padding: 0;
             color: #222222;
+           text-shadow: 
+                2px 2px 4px rgba(0, 0, 0, 0.5), /* Original shadow */
+                0 0 10px #fff; /* Glow effect */
             line-height: 1.4;
             background-image: url('resources/background.jpg');
             background-size: cover;
@@ -47,12 +50,28 @@
             text-align: center;		
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
+
+        h1, h2 { /* Added styles for h1 and h2 titles */
+            font-family: 'Roboto', sans-serif; /* Change font family */
+            font-size: 2.5rem; /* Adjust font size */
+            text-shadow: 
+                2px 2px 4px rgba(0, 0, 0, 0.5), /* Original shadow */
+                0 0 10px #fff; /* Glow effect */
+            -webkit-text-stroke: 1px black; /* Text outline */
+            color: #fff; /* Ensure text is white for contrast */
+            letter-spacing: 0.1em; /* Adjust letter spacing */
+            text-transform: uppercase; /* Transform to uppercase */
+        }
+	h2 {
+	    font-size: 1.5rem; /* Adjust font size */
+	}
+
         nav {
             background-color: #234C6A;
             color: #fff;
             padding: 0.5rem 0;
             text-align: center;
-	    font-weight: bold;
+	        font-weight: bold;
         }
         nav a {
             color: #fff;
@@ -65,15 +84,15 @@
             background-color: #FF6D1F;
         }
 
-	.project-item a {
+	    .project-item a {
     	    color: yellow;
     	    font-size: 12px;
     	    text-align: center;
     	   display: block; /* or inline-block */
-	}
+	    }
 
 	
- 	#services {
+ 	    #services {
             color: white;
             font-size: 16px;
             text-align: left;
@@ -82,19 +101,19 @@
             width: 100%; /* Optional: Adjust table width as needed */
             margin: 0 auto; /* Center the table */
             border-collapse: collapse; /* Add this to collapse borders */
-	    background-color:white;
+	        background-color:white;
         }
         #services th,
         #services td {
-	    color: black;	    
+	        color: black;	    
             text-align: center; /* Center text in table cells */
             border: 1px solid gray; /* Add border to table cells */
-	    background-color:white;
+	        background-color:white;
         }
 
-	.intro {
+	    .intro {
     	    background-image: url('resources/intro.png'); 
-   	    background-size: cover; 
+   	        background-size: cover; 
     	    background-position: center; 
     	    color: #fff;     
     	    text-align: left;
@@ -103,7 +122,7 @@
     	    display: flex;
     	    flex-direction: column;
     	    align-items: center;
-	}
+	    }
 
         .intro h2, .about h2, .projects h2, .contact-info h2 {
             font-size: 1rem;
@@ -112,13 +131,13 @@
         .intro p, .about p, .projects p, .contact-info p {
             font-size: 1rem;
             color: #fff;    	    
-	    text-align: center;
+	        text-align: center;
         }
-	.intro img {
-		width: 200px;
-		border-radius: 50%;
-		box-shadow: 0 0 5px rgba(0,0,0,0.3);
-	}
+	    .intro img {
+		    width: 200px;
+		    border-radius: 50%;
+		    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	    }
         .container { 
             width: 80%;
             margin: auto;
@@ -201,7 +220,7 @@
             .intro, .about, .projects, .contact-info {
                 width: 95%;
                 padding: 2rem 0.5rem;
-		flex-direction: column;
+		        flex-direction: column;
             }
             .intro h2, .about h2, .projects h2, .contact-info h2 {
                 font-size: 1.8rem;
@@ -209,9 +228,9 @@
             .intro p, .about p, .projects p, .contact-info p {
                 font-size: 1rem;
             }
-			.intro img {
-			width: 150px;
-			margin-bottom: 0.5rem;
+		    .intro img {
+			    width: 150px;
+			    margin-bottom: 0.5rem;
 			}
             .container {
                 width: 95%;
@@ -237,8 +256,8 @@
     <nav>
         <a href="#about">ABOUT</a>
         <a href="#projects">GALLERY</a>
-	<a href="#services">SERVICES</a>
-	<a href="#information">INFORMATION</a>
+	    <a href="#services">SERVICES</a>
+	    <a href="#information">INFORMATION</a>
         <a href="#contact">CONTACT</a>
 
     </nav>
@@ -259,15 +278,15 @@
         <div class="projects-gallery">
 
            <div class="project-item">
-	    	<a href="https://web.facebook.com/reel/840591631744405"> ▶ Watch reel <img 		   
+	    	    <a href="https://web.facebook.com/reel/840591631744405"> ▶ Watch reel <img 		   
               	src="projects/reel1.png" alt="Reel1 Thumbnail" width="200" height="150">
     	    	</a>
-	   </div>
-	   <div class="project-item">
-		<a href="https://web.facebook.com/reel/800353676139762"> ▶ Watch reel <img 		   
+	       </div>
+	       <div class="project-item">
+		        <a href="https://web.facebook.com/reel/800353676139762"> ▶ Watch reel <img 		   
               	src="projects/reel2.png" alt="Reel2 Thumbnail" width="200" height="150">
     	    	</a>
-	   </div>
+	       </div>
 
 	      <div class="project-item">
                 <a href="projects/project1.jpg"> POLLD: WLS
@@ -275,9 +294,9 @@
                 </a>
             </div>
             <div class="project-item">
-            <a href="projects/project2.jpg"> Onsite Installation
-               <img src="projects/project2.jpg" alt="Onsite installation and programming of WLS">
-            </a>
+                <a href="projects/project2.jpg"> Onsite Installation
+                   <img src="projects/project2.jpg" alt="Onsite installation and programming of WLS">
+                </a>
             </div>
             <div class="project-item"> 
                 <a href="projects/project3.jpg">LoRa System
@@ -333,7 +352,6 @@
         </table>
     </section>
 
-/* Information Section Youtube Videos ============================================*/
 <section id="information" class="info-section">
 <h2>Information Section</h2>
 <div class="video-container">
