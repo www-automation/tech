@@ -47,12 +47,32 @@
             background-color: #FF6D1F;
         }
 
-.project-item a {
-    color: yellow;
-    font-size: 12px;
-    text-align: center;
-    display: block; /* or inline-block */
-}
+	.project-item a {
+    	    color: yellow;
+    	    font-size: 12px;
+    	    text-align: center;
+    	   display: block; /* or inline-block */
+	}
+
+	
+ 	#programming-services {
+            color: white;
+            font-size: 16px;
+            text-align: left;
+        }
+        #programming-services table {
+            width: 100%; /* Optional: Adjust table width as needed */
+            margin: 0 auto; /* Center the table */
+            border-collapse: collapse; /* Add this to collapse borders */
+	    background-color:white;
+        }
+        #programming-services th,
+        #programming-services td {
+	    color: black;	    
+            text-align: center; /* Center text in table cells */
+            border: 1px solid gray; /* Add border to table cells */
+	    background-color:white;
+        }
 
 	.intro {
     	    background-image: url('resources/intro.png'); 
@@ -183,11 +203,11 @@
                 font-size: 1.5rem;
             }
             .about p, .contact-info p {
-                font-size: 1rem;
+               font-size: 1rem;
             }
             .project-item {
                 width: 45%;
-                 height: 100px;
+                height: 100px;
             }
         }
     </style>
@@ -260,6 +280,39 @@
             </div>             
         </div>
     </section>
+
+    <section id="programming-services">
+        <h2>Programming Services</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sensors</th>
+                    <th>Description</th>
+                    <th>Protocol</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="projects/ultrasonic.png" alt="Service 1" width="200"></td>
+                    <td>Industrial Ultrasonic Level Sensor</td>
+                    <td>RS485 ModBus</td>
+                </tr>
+                <tr>
+                    <td><img src="projects/sim.jpg" alt="Service 2" width="200"></td>
+                    <td>GSM Shield</td>
+                    <td>UART</td>
+                </tr>
+                <tr>
+                    <td><img src="projects/lora.png" alt="Service 3" height="200" width="200"></td>
+                    <td>LoRa Shield</td>
+                    <td>UART</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
+
+
     <section id="contact" class="contact-info">
         <h2>Contact Information</h2>
         <p>
@@ -272,4 +325,3 @@
     </footer>
 </body>
 </html>
-
