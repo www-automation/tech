@@ -548,7 +548,7 @@
 	<div id="map"></div>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
-	var map = L.map('map').setView([7.588701470367552, 124.9382161882817], 10);  // Initial center and zoom
+	var map = L.map('map').setView([8.14172373388654, 124.85429152994868], 8);  // Initial center and zoom
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -556,7 +556,8 @@
 
         // Array of coordinates for the pins
         var locations = [
-           {lat: 7.588701470367552, lng: 124.9382161882817, title: 'Muleta Bridge: Kadingilan'}
+			{lat: 7.588701470367552, lng: 124.9382161882817, title: 'Muleta Bridge: Kadingilan' },
+	   		{lat: 8.769268404461465, lng: 124.78296167155918, title: 'Cabulaway River A: Balingasag' }
         ];
 
         // Loop through the locations and create markers
@@ -624,6 +625,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
