@@ -478,7 +478,7 @@
 	<div id="map"></div>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
-        var map = L.map('map').setView([34.0522, -118.2437], 8);  // Initial center and zoom
+	var map = L.map('map').setView([34.0522, -118.2437], 8);  // Initial center and zoom
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -486,14 +486,15 @@
 
         // Array of coordinates for the pins
         var locations = [
-            {lat: 7.588751933137998, lng: 124.93821221060364, title: 'Location 1'}, // Los Angeles
+            {lat: 7.588751933137998, lng: 124.93821221060364, title: 'Kadingilan: Muleta Bridge'}
         ];
-		
+
         // Loop through the locations and create markers
         for (var i = 0; i < locations.length; i++) {
             L.marker([locations[i].lat, locations[i].lng]).addTo(map)
                 .bindPopup(locations[i].title);
         }
+        
     </script>
 
 <section id="information" class="info-section">
@@ -519,6 +520,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
